@@ -1,8 +1,14 @@
-import type { Metadata } from 'next'
+
+
+
+import type { Metadata } from 'next';
+import "./globals.css";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import Navbar from './components/header/page';
+import Footer from './components/footer/page';
 
 
 
@@ -18,7 +24,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar  />
+          {children}
+        <Footer />
+      </body>
     </html>
   )
 }

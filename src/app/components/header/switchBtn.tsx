@@ -1,16 +1,17 @@
 "use client"
+
 import * as React from 'react';
 import Switch from '@mui/material/Switch';
 import NightsStayIcon from '@mui/icons-material/NightsStay';
 import LightModeIcon from '@mui/icons-material/LightMode';
-import style from "./style.module.css"
+import style from "@/app/components/header/style.module.css"
 
-export default function ControlledSwitches({mode, setMode}) {
+export default function ControlledSwitches({mode, setMode}: any) {
 
 
   const [checked, setChecked] = React.useState(false);
 
-  const handleChange = (event) => {
+  const handleChange = (event: any) => {
 
     setChecked(event.target.checked);
     

@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: pink;
+    color: white;
+}
+
+body.dark-mode ::selection {
+    background-color: #00bcd4;
+    color: white;
+}
+
 
 body{
     background-color: #fafafa;
@@ -17,6 +27,8 @@ body.dark-mode{
     background-color: #141A1F;
 }
 
+
+body.dark-mode  h3.heading,
 body.dark-mode  h1{
     color: #fffffa !important;
 }
@@ -24,4 +36,66 @@ body.dark-mode  h1{
 
 body.dark-mode  p{
     color: #F5F5F5 !important;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: #ffffff ;
+}
+/* Handle */
+
+
+::-webkit-scrollbar-thumb {
+	background: #aeaeae;
+    border-radius: 20px;
+  
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+	background: #00bcd4;
+  
+}
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+
+
+
+.bg-theme{
+    background: #f4f4f4;
+}
+
+
+body.dark-mode  .bg-theme{
+    background: #111111
+}   
+
+
+
+
+body.dark-mode  .bg-theme h3{
+    color: #fff;
+}
+
+
+body.dark-mode  .bg-theme .inner-theme{
+    background: #141a1f;
+}
+
+body.dark-mode .bg-theme .inner-theme a{
+    color: #fff;
 }

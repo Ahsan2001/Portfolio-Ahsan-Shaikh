@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Grid } from '@mui/material';
-import style from "./style.module.css"
+import style from "@/app/components/footer/style.module.css"
 import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <Container  maxWidth="lg">
+        <Container maxWidth="lg">
             <footer className={style.footer}>
                 <Grid container alignItems="center">
                     <Grid item lg={6} md={6} xs={12} >

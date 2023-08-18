@@ -19,6 +19,11 @@
     padding-top: 10px;
 }
 
+
+.banner_img{
+    text-align: center;
+}
+
 .icons{
     display: flex;
     justify-content: flex-start;
@@ -27,30 +32,33 @@
     margin-top: 15px;
 }
 .icons svg{
-    color: #65656d;
-    font-size: 26px;
+    font-size: 30px;
     transition: 0.5s;
     background: rgb(255, 255, 255);
     padding: 4px;
     border-radius: 3px;
-}
-
-.icons svg:hover{
-    color: #27272a;
+    box-shadow: 0px 0px 1px 1px #91919117;
 }
 
 
-.icons svg:first-child {
-    color: red;
+.icons a:nth-child(1) svg{
+    color: #0077B5;
+}
+
+.icons a:nth-child(2) svg{
+    color: #171515;
+}
+
+.icons a:nth-child(3) svg{
+    color: #0077B5;
+}
+
+.icons a:nth-child(4) svg{
+    color: #D23675;
 }
 
 
 
-
-
-.banner_img{
-    text-align: center;
-}
 
 
 

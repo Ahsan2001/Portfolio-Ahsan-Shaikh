@@ -1,9 +1,8 @@
-'use client'
-
+"use client"
 
 import React from 'react';
 import { Container, Grid,Box } from '@mui/material';
-import style from "./style.module.css"
+import style from "@/app/components/banner/style.module.css"
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -26,7 +25,7 @@ const HomeBanner = () => {
                        
                             <Box className={style.icons}>
                                 <a target="_blank" href="https://www.linkedin.com/in/muhammad-ahsan-shaikh-3aa018226" rel="noopener noreferrer">
-                                    <LinkedInIcon />
+                                    <LinkedInIcon  />
                                 </a>
                                 <a target="_blank" href="https://github.com/Ahsan2001" rel="noopener noreferrer">
                                     <GitHubIcon />
@@ -44,7 +43,7 @@ const HomeBanner = () => {
 
                     <Grid item lg={6} md={6} xs={12} >
                         <div className={style.banner_img}>
-                            <Image src={"/banner.webp"} alt="my logo image " width={500} height={400}  />
+                            <Image src={"/banner.webp"} alt="my logo image " width={450} height={400}  />
                         </div>
                     </Grid>
                 </Grid>

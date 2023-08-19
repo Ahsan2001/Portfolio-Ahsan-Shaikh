@@ -5,7 +5,7 @@ import { Technology } from '@/types';
 import Image from 'next/image';
 
 
-const Data: Technology[] =  [
+const Data : Technology[] =  [
     {
         name: "Html",
         img: "html.png"
@@ -146,7 +146,6 @@ const Skills = () => {
                             )
                         })
                     }
-                 
             </Grid>
         </section>
     </Container>

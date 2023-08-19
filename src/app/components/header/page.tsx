@@ -24,8 +24,8 @@ const Navbar = () => {
           <Grid item lg={3}  md={3} xs={6} >
             <Image src={mode ? "/logo.png" : "/logo-2.png"} alt="my logo image " width={180} height={45} className={style.logo} />
           </Grid>
-           <Grid item lg={6}  md={6} xs={6} className={style.navLinks}>
-            <nav>
+           <Grid item lg={6}  md={6} xs={6} className={style.navLinks} >
+            <nav className={"bg-theme"}>
               <Link href="/"  >Home</Link>
               <Link href="/about" >About</Link>
               <Link href="/projects" >Projects</Link>

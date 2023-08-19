@@ -1,0 +1,22 @@
+.projects .InnerBox{
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+
+.projects .InnerBox:hover{
+    background: #F1F1F1;
+}
+
+
+
+
+.projects .InnerBox ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}

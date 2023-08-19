@@ -40,6 +40,9 @@ body.dark-mode  p{
 
 
 
+body.dark-mode button.inner-theme{
+    color: #fff;
+}
 
 
 
@@ -77,23 +80,36 @@ body.dark-mode::-webkit-scrollbar-thumb {
 
 .bg-theme{
     background: #f4f4f4;
+    transition: 0.5s;
 }
 
 
 body.dark-mode  .bg-theme{
     background: #111111
-}   
+}
 
+body.dark-mode  .bg-theme a{
+    color: #b7b4b4;
+}
 
 
 
 body.dark-mode  .bg-theme h3{
     color: #fff;
 }
-
+body.dark-mode  .bg-theme label{
+    color: #fff;
+}
 
 body.dark-mode  .bg-theme .inner-theme{
     background: #141a1f;
+    transition: 0.5s;
+
+}
+
+body.dark-mode  .bg-theme input{
+    color: #f4f4f4;
+    font-size: 14px;
 }
 
 body.dark-mode .bg-theme .inner-theme a{

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid } from '@mui/material';
+import { Container, Grid, Box } from '@mui/material';
 import style from "@/app/projects/style.module.css"
 import Link from 'next/link';
 import {Project} from "@/types";
@@ -19,12 +19,12 @@ const projectData : Project[] = [
     },
     {
         name: "Project 3",
-        techStack: ["react.png","tailwind.png"],
+        techStack: ["ts.png","node.jpg"],
         description: "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
     },
     {
         name: "Project 4",
-        techStack: ["html.png", "css.png", "b.png"],
+        techStack: ["html.png","css.png"],
         description: "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
     },
     {
@@ -46,13 +46,15 @@ const Projects = () => {
                                 <ul>
                                     {element.techStack.map((tech, techIndex) => (
                                         <li key={techIndex}>{
-                                            <Image src ={ `/skills/${tech} `} alt={element.name} width={30} height={30} />
+                                            <Image src ={ `/skills/${tech} `} alt={element.name} width={35} height={35} />
                                         }</li>
                                     ))}
                                 </ul>
                                <h4> {element.name}</h4>
                                <p>{element.description}</p>
-                                <Link href={`projects/${element.name}`}> <LinkIcon /> view project</Link>
+                               <Box className={style.viewProjectBtn}> 
+                                    <Link href={`projects/${element.name}`}> <LinkIcon /> view project</Link>
+                               </Box>
                             </div>
                         </Grid>
                     )}

@@ -7,11 +7,17 @@ import Image from 'next/image';
 import style from '@/app/components/header/style.module.css';
 import ControlledSwitches from '@/app/components/header/switchBtn';
 import Link from 'next/link';
-
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+ const [mobileOpen, setMobileOpen] = React.useState(false);
   const [mode , setMode] = React.useState(true);
+
+  const pathname = usePathname();
+
+  const isActive = (path: string) => {
+    return pathname === path ? 'active' : '';
+  };
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -26,10 +32,10 @@ const Navbar = () => {
           </Grid>
            <Grid item lg={6}  md={6} xs={6} className={style.navLinks} >
             <nav className={"bg-theme"}>
-              <Link href="/"  >Home</Link>
-              <Link href="/about" >About</Link>
-              <Link href="/projects" >Projects</Link>
-              <Link href="/contact" >Contact</Link>
+              <Link href="/"  className={isActive('/') }>Home</Link>
+              <Link href="/about" className={isActive('/about')}>About</Link>
+              <Link href="/projects" className={ isActive('/projects')}>Projects</Link>
+              <Link href="/contact" className={isActive('/contact')}>Contact</Link>
             </nav>
           </Grid>
           <Grid item lg={3}  md={3} xs={6}>

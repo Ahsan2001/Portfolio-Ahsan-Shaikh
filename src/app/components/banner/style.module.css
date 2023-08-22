@@ -1,5 +1,5 @@
 .banner {
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 
@@ -34,7 +34,7 @@
 .icons svg{
     font-size: 30px;
     transition: 0.5s;
-    background: rgb(255, 255, 255);
+    background: #fafafa;
     padding: 4px;
     border-radius: 3px;
     box-shadow: 0px 0px 1px 1px #91919117;

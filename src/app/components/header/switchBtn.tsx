@@ -39,17 +39,15 @@ export default function ControlledSwitches({mode, setMode}: any) {
     
 
     {mode ?
-    
-    <div className={style.day}>
-      <LightModeIcon /> 
-    </div>
-    : 
-    <div className={style.night}>
-      <NightsStayIcon />
-    </div>
-    
-    
-    
+
+      <div className={style.day}>
+        <LightModeIcon />
+      </div>
+      :
+      <div className={style.night}>
+        <NightsStayIcon />
+      </div>
+
     }
 
     <Switch

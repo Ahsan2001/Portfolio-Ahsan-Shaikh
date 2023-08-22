@@ -27,7 +27,8 @@ header.menuLink nav a {
 }
 
 
-header.menuLink nav a.active,
+
+
 header.menuLink nav a:hover {
     color: #00bcd4;
 }
@@ -75,3 +76,7 @@ header.menuLink nav a:hover {
         display: block;
     }
 }
+
+
+
+

@@ -7,7 +7,6 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Image from 'next/image';
 
 const HomeBanner = () => {
     return (
@@ -43,7 +42,7 @@ const HomeBanner = () => {
 
                     <Grid item lg={6} md={6} xs={12} >
                         <div className={style.banner_img}>
-                            <Image src={"/banner.webp"} alt="my logo image " width={450} height={400}  />
+                            <img src={"/banner.webp"} alt="my logo image"  style={{ width: '100%', height: 'auto' }} />
                         </div>
                     </Grid>
                 </Grid>

@@ -19,7 +19,7 @@ function About() {
     <Container maxWidth="lg">
             <section className={style.aboutMe}>
                 <Grid container columnSpacing={{ xs: 1, sm: 2, md: 2, lg: 3 }}>
-                    <Grid item lg={4} md={4} xs={12} >
+                    <Grid item lg={4} md={4} xs={12} order={{ xs: 2, md: 1, lg: 1}}>
                       <div className={`${style.leftSideContent} bg-theme`}>
                       <Image src="/avatar.png" alt="my image" width={200} height={180} className={style.logo} />                     
                         <h3>Ahsan Shaikh 
@@ -51,7 +51,7 @@ function About() {
                         </div>
                     </Grid>
 
-                    <Grid item lg={8} md={8} xs={12} >
+                    <Grid item lg={8} md={8} xs={12}order={{ xs: 1, md: 2, lg: 2}}>
                         <div className={`${style.rightSideContent}  bg-theme`}>
                           <h3 className="heading">About Me</h3>
                             <p>I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.</p>

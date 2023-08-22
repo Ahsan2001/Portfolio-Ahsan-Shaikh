@@ -93,7 +93,7 @@ body.dark-mode  .bg-theme a{
 }
 
 
-
+body.dark-mode  .bg-theme h4,
 body.dark-mode  .bg-theme h3{
     color: #fff;
 }
@@ -115,3 +115,15 @@ body.dark-mode  .bg-theme input{
 body.dark-mode .bg-theme .inner-theme a{
     color: #fff;
 }
+
+
+body.dark-mode .bg-theme:hover{
+    background: #0b0e11;
+}
+
+
+
+a.active{
+    color: #00bcd4 !important;
+}
+

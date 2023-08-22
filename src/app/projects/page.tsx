@@ -5,55 +5,37 @@ import Link from 'next/link';
 import {Project} from "@/types";
 import Image from "next/image";
 import LinkIcon from '@mui/icons-material/Link';
-
-const projectData : Project[] = [
-    {
-        name: "Project 1",
-        techStack: ["ts.png","next.png"],
-        description: "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-    },
-    {
-        name: "Project 2",
-        techStack: ["react.png", "mu.png"],
-        description: "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-    },
-    {
-        name: "Project 3",
-        techStack: ["ts.png","node.jpg"],
-        description: "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-    },
-    {
-        name: "Project 4",
-        techStack: ["html.png","css.png"],
-        description: "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-    },
-    {
-        name: "Project 5",
-        techStack: ["js.png", "node.jpg"],
-        description: "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-    },
-]
+import {projectData} from "@/static/projects"
 
 const Projects = () => {
   return (
     <Container maxWidth="lg">
         <section className={style.projects}>
             <Grid container alignItems="center" rowSpacing={{ xs: 1, sm: 2, md: 2, lg: 3 }} columnSpacing={{ xs: 1, sm: 2, md: 2,lg: 3  }}>
+                <Grid item lg={12} md={12} xs={12}>
+                    <div className={`${style.innerContent} bg-theme`}>
+                        <h1>Projects I’ve made</h1>
+                        <p>I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of
+                            these projects are open-source and available for others to explore and contribute to. If you're interested
+                            in any of the projects I've worked on, please feel free to check out the code and suggest any improvements
+                            or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.</p>
+                    </div>
+                </Grid>
                 {projectData.map((element, index)=> {
                     return (
                         <Grid key={index} item lg={4} md={6} xs={12}>
-                            <div className={style.InnerBox}>
+                            <div className={`${style.InnerBox}  bg-theme`}>
                                 <ul>
                                     {element.techStack.map((tech, techIndex) => (
                                         <li key={techIndex}>{
-                                            <Image src ={ `/skills/${tech} `} alt={element.name} width={35} height={35} />
+                                            <Image src ={ `/skills/${tech} `} alt={element.name} width={32} height={32} />
                                         }</li>
                                     ))}
                                 </ul>
                                <h4> {element.name}</h4>
                                <p>{element.description}</p>
                                <Box className={style.viewProjectBtn}> 
-                                    <Link href={`projects/${element.name}`}> <LinkIcon /> view project</Link>
+                                    <Link href={`projects/${element.id}`}> <LinkIcon /> view project</Link>
                                </Box>
                             </div>
                         </Grid>

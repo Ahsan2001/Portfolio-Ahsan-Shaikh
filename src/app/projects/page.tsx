@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Grid, Box } from '@mui/material';
 import style from "@/app/projects/style.module.css"
 import Link from 'next/link';
-import {Project} from "@/types";
 import Image from "next/image";
 import LinkIcon from '@mui/icons-material/Link';
 import {projectData} from "@/static/projects"
@@ -28,7 +27,7 @@ const Projects = () => {
                                 <ul>
                                     {element.techStack.map((tech, techIndex) => (
                                         <li key={techIndex}>{
-                                            <Image src ={ `./skills/${tech} `} alt={element.name} width={32} height={32} />
+                                            <Image src ={ `/${tech} `} alt={element.name} width={32} height={32} />
                                         }</li>
                                     ))}
                                 </ul>

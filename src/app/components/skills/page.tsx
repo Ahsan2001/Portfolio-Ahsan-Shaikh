@@ -139,7 +139,7 @@ const Skills = () => {
                             return (
                                 <Grid key={index} item lg={1} md={2} xs={3} >
                                     <div className={style.skillBox}> 
-                                        <Image src ={ `/skills/${element.img} `} alt={element.name} width={30} height={30} />
+                                        <Image src ={ `./skills/${element.img} `} alt={element.name} width={30} height={30} />
                                         <h6>{element.name}</h6> 
                                     </div> 
                                 </Grid>

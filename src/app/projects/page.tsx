@@ -27,7 +27,7 @@ const Projects = () => {
                                 <ul>
                                     {element.techStack.map((tech, techIndex) => (
                                         <li key={techIndex}>{
-                                            <Image src ={ `/${tech} `} alt={element.name} width={32} height={32} />
+                                            <Image src={tech} alt={element.name} width={32} height={32} />
                                         }</li>
                                     ))}
                                 </ul>

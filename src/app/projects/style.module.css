@@ -112,3 +112,64 @@
 
 
 
+.innerContentDetail h1{
+    font-family: "Roboto";
+    text-align: center;
+    padding: 20px 0 10px;
+
+}
+
+.innerContentDetail > p{
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+
+.detailing{
+    font-family: "Roboto";
+    margin: 20px 0 ;
+    padding: 20px;
+}
+
+
+.detailing h4{
+    color: #00bcd4;
+    padding-bottom: 10px;
+}
+
+.detailing p {
+    padding-bottom: 10px;
+}
+
+
+.detailing  img{
+    margin: 10px;
+}
+
+.detailing a {
+    font-size: 14px;
+
+}
+
+
+.innerHeaderImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+ 
+
+
+.btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px 0;
+}
+
+.btn a {
+    font-family: "Roboto";
+}

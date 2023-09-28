@@ -31,7 +31,7 @@ const Projects = () => {
                                         }</li>
                                     ))}
                                 </ul>
-                               <h4> {element.name}</h4>
+                               <h4>{element.name}</h4>
                                <p>{element.description}</p>
                                <Box className={style.viewProjectBtn}> 
                                     <Link href={`projects/${element.id}`}> <LinkIcon /> view more</Link>

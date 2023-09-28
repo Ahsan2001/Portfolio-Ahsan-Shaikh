@@ -1,11 +1,13 @@
-import {Project} from "@/types";
+import { Project } from "@/types";
 
-export const projectData : Project[] = [
+export const projectData: Project[] = [
     {
         id: 1,
-        name: "Project 1",
-        techStack: ["/ts.png","/node.jpg"],
-        description: "Programming Projects to Learn TypeScript and Node.js",
+        name: "Programming projects",
+        techStack: ["/ts.png", "/node.jpg"],
+        category: "Programming",
+        description: "TypeScript and Node.js programs had been developed and published on Node Package Manager NPM.",
+        github: "https://github.com/Ahsan2001/Learning-TypeScript/tree/projects",
         detail: [
             {
                 title: "Simple Command Line Calculator",
@@ -62,23 +64,96 @@ export const projectData : Project[] = [
     },
     {
         id: 2,
-        name: "Project 2",
+        name: "Programming projects",
         techStack: ["/js.png", "/node.jpg"],
-        description: "Programming Projects to Learn JavaScript and Node.js",
-        links: "http://js-assignment-ahsan.surge.sh/",
+        category: "Programming",
+        description: "Completed 44 Javascript and Node.js problems. View all programs in github link",
+        github: "https://github.com/Ahsan2001/JavaScript-and-Node.js",
         detail: [
             {
-                title: "",
-                description: "",
-                links: "",
+                title: "Print Personal Message",
+                description: "Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”",
+                links: "http://js-assignment-ahsan.surge.sh/Personal_Message/index.html",
             },
+            {
+                title: "Name Cases",
+                description: "Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.",
+                links: "http://js-assignment-ahsan.surge.sh/Name_Cases/index.html",
+            },
+            {
+                title: "Famous Quote",
+                description: "Store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.",
+                links: "http://js-assignment-ahsan.surge.sh/Famous_Quote_2/index.html",
+            },
+            {
+                title: "Stripping Names",
+                description: "Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, \t and \n, at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.",
+                links: "http://js-assignment-ahsan.surge.sh/Stripping_Names/index.html",
+            },
+            {
+                title: "Create Four Line",
+                description: "Your output should simply be four lines with the number 8 appearing once on each line.",
+                links: "http://js-assignment-ahsan.surge.sh/Create_Four_Lines/index.html",
+            },
+            {
+                title: "City Names",
+                description: "Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this Lahore, Pakistan  Call your function with at least three city-country pairs, and print the value that’s returned.",
+                links: "http://js-assignment-ahsan.surge.sh/City_Names/index.html",
+            },
+            {
+                title: "Album",
+                description: "Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.",
+                links: "http://js-assignment-ahsan.surge.sh/Album/index.html",
+            },
+            {
+                title: "Adding Comments",
+                description: "Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.",
+                links: "http://js-assignment-ahsan.surge.sh/Adding_Comments/index.html",
+            },
+            {
+                title: "Names",
+                description: "Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.",
+                links: "http://js-assignment-ahsan.surge.sh/Names/index.html",
+            }, {
+                title: "Greetings",
+                description: "Start with the array you used in previous Exercise , but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.",
+                links: "http://js-assignment-ahsan.surge.sh/Greetings/index.html",
+            }, {
+                title: "Your Own Array",
+                description: "Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”",
+                links: "http://js-assignment-ahsan.surge.sh/Your_Own_Array/index.html",
+            }, {
+                title: "Guest List",
+                description: "If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.",
+                links: "http://js-assignment-ahsan.surge.sh/Guest_List/index.html",
+            }, {
+                title: "Cars",
+                description: "Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.",
+                links: "http://js-assignment-ahsan.surge.sh/Cars/index.html",
+            }, {
+                title: "Sandwiches",
+                description: "Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.",
+                links: "http://js-assignment-ahsan.surge.sh/Sandwiches/index.html",
+            }, {
+                title: "Hello Admin",
+                description: "Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user: If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?  Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again. ",
+                links: "http://js-assignment-ahsan.surge.sh/Hello_Admin/index.html",
+            }, {
+                title: "Large Shirts",
+                description: "Modify the make_shirt() function so that shirts are large by default with a message that reads I love JavaScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.",
+                links: "http://js-assignment-ahsan.surge.sh/Large_Shirts/index.html",
+            },
+
+
         ]
     },
     {
         id: 3,
-        name: "Project 3",
-        techStack: ["/ts.png","/react.png","/node.jpg","/mu.png"],
-        description: "A simple Blog web app, with all the main functionality like Auth, Read, Edit, Delete and Update.",
+        name: "Custom Html & Php projects",
+        techStack: ["/html.png","/css.png", "/php.png","/js.png",],
+        category: "Frontend",
+        description: "Participated on more than 100+ custom client projects And Built 10+ custom brands from scratch",
+        github: "https://github.com/Ahsan2001/JavaScript-and-Node.js",
         detail: [
             {
                 title: "Full Stack Personal Blog Web App",
@@ -97,34 +172,34 @@ export const projectData : Project[] = [
             },
         ]
     },
-    {
-        id: 4,
-        name: "Project 4",
-        techStack: ["/react.png"],
-        description: "Github User Finder Application",
-        links: "https://github-finder-with-redux.netlify.app/",
-        img: "/img/github-finder-app.png",
-        detail: [
-            {
-                title: "",
-                description: "",
-                links: "",
-            },
-        ]
-    },
-   
-    {
-        id: 5,
-        name: "Project 5",
-        techStack: ["/next.png","/ts.png", "/mu.png"],
-        description: "Personal Portfolio Website",
-        links: "https://portfolio-ahsan-shaikh.vercel.app/",
-        detail: [
-            {
-                title: "",
-                description: "",
-                links: "",
-            },
-        ]
-    },
+    // {
+    //     id: 4,
+    //     name: "Project 4",
+    //     techStack: ["/react.png"],
+    //     description: "Github User Finder Application",
+    //     links: "https://github-finder-with-redux.netlify.app/",
+    //     img: "/img/github-finder-app.png",
+    //     detail: [
+    //         {
+    //             title: "",
+    //             description: "",
+    //             links: "",
+    //         },
+    //     ]
+    // },
+
+    // {
+    //     id: 5,
+    //     name: "Project 5",
+    //     techStack: ["/next.png","/ts.png", "/mu.png"],
+    //     description: "Personal Portfolio Website",
+    //     links: "https://portfolio-ahsan-shaikh.vercel.app/",
+    //     detail: [
+    //         {
+    //             title: "",
+    //             description: "",
+    //             links: "",
+    //         },
+    //     ]
+    // },
 ]

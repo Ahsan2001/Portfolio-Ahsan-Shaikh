@@ -46,7 +46,10 @@ export const skills : Technology[] =  [
         name: "Bootstrap",
         img: "/b.png"
     },
-
+    {
+        name: "Php",
+        img: "/php.png"
+    },
     {
         name: "Tailwind Css",
         img: "/tailwind.png"

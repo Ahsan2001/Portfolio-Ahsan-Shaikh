@@ -3,6 +3,7 @@ import { projectData } from "@/static/projects"
 import { Container, Grid, Box } from '@mui/material';
 import style from "@/app/projects/style.module.css";
 import Image from "next/image";
+import Link from 'next/link';
 
 
 
@@ -37,31 +38,16 @@ const ProjectDetail = ({ params }) => {
                             </div>
 
 
-                            <div className={style.innerHeaderImg}>
-                                {project?.img && (
-                                    <Image src={project.img} alt={"iconss"} width={550} height={700} />)
-                                }
-                            </div>
-
-
-                            <div className={style.btn}>
-                                {project?.links && (
-                                    <a href={project.links} target="_blank" rel="noopener noreferrer"> view project</a>
-                                )}
-                            </div>
-
-
                             <Grid container>
-
                                 {project.detail.map((item, ind) => {
                                     return (
                                         <Grid item lg={6} md={6} xs={12} key={ind}>
 
                                             {item?.title && (
                                                 <Box className={style.detailing}>
-                                                    <h4>{item.title}</h4>
-                                                    <p>{item.description}</p>
-                                                    <a href={item.links} target="_blank" rel="noopener noreferrer">view project</a>
+                                                    <h4>{item?.title}</h4>
+                                                    <p>{item?.description}</p>
+                                                    <a href={item?.links} target="_blank" rel="noopener noreferrer">view project</a>
                                                     {item?.videoLink && (
                                                         <a href={item.videoLink} target="_blank" rel="noopener noreferrer"> check video</a>
                                                     )}
@@ -71,6 +57,14 @@ const ProjectDetail = ({ params }) => {
                                     )
                                 }
                                 )}
+
+                                <Grid item lg={12} md={12} xs={12}>
+                                    <Link href="/projects" className={style.contactMe}>
+                                        <button className="inner-theme">Go Back</button>
+                                    </Link>
+                                </Grid>
+
+
                             </Grid>
                         </div>
                     </Grid>

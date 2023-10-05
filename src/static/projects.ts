@@ -149,26 +149,21 @@ export const projectData: Project[] = [
     },
     {
         id: 3,
-        name: "Custom Html & Php projects",
+        name: "Custom Html & Php Brand project",
         techStack: ["/html.png","/css.png", "/php.png","/js.png",],
-        category: "Frontend",
-        description: "Participated on more than 100+ custom client projects And Built 10+ custom brands from scratch",
-        github: "https://github.com/Ahsan2001/JavaScript-and-Node.js",
+        category: "Brands",
+        description: "Utilized cutting-edge frontend technologies, including HTML5, CSS3, and JavaScript, to create a visually appealing and responsive website layout",
+        github: "",
         detail: [
             {
-                title: "Full Stack Personal Blog Web App",
-                description: `User Authentication \n
-                Users can create an account with their name, username, email address and password.\n
-                Users can log in with their registered username and password.\n
-                User passwords are securely hashed and stored in the database using bcrypt.\n
-                Authentication is implemented using JWT (JSON Web Tokens)\n
-                Users can view a list of Blogs and detail page\n
-                Users can comment on any blog\n
-                Users can post a blog with author name, date, title, content, and blog image\n
-                Image is store in cloudinary platform\n
-                Only Admin Users can Edit and Delete Functionality in blog\n
-                Functionalities are protected by role-based access control (RBAC), ensuring that only authenticated`,
-                links: "https://github.com/Ahsan2001/personal-blog-app",
+                title: "Project: Amazon Web Design Inc. Website Development",
+                description: `Developed and launched the official website for Amazon Web Design Inc., 
+                showcasing the company's web development expertise. Responsible for both frontend and backend development, 
+                ensuring a seamless user experience, responsive design, and robust security measures. 
+                Collaborated closely with the design team, optimized performance, and implemented cross-browser compatibility. 
+                Demonstrated strong problem-solving skills and technical expertise, 
+                resulting in a visually appealing and highly functional website.`,
+                links: "https://amazonwebdesigninc.com/",
             },
         ]
     },

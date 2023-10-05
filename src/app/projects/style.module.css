@@ -221,3 +221,9 @@
     cursor: pointer;
     letter-spacing: 1px;
 }
+
+
+.custom_flex{
+    display: flex;
+    
+}

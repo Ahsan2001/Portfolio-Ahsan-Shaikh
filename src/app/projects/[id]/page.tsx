@@ -59,9 +59,18 @@ const ProjectDetail = ({ params }) => {
                                 )}
 
                                 <Grid item lg={12} md={12} xs={12}>
-                                    <Link href="/projects" className={style.contactMe}>
-                                        <button className="inner-theme">Go Back</button>
-                                    </Link>
+
+                                    <div className={style.custom_flex}>
+                                        <Link href="/projects" className={style.contactMe}>
+                                            <button className="inner-theme">Go Back</button>
+                                        </Link>
+
+
+                                        <Link href={project.github} className={style.contactMe}>
+                                            <button className="inner-theme">View Github</button>
+                                        </Link>
+                                    </div>
+
                                 </Grid>
 
 

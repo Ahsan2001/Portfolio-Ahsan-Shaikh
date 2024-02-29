@@ -237,6 +237,34 @@ export const projectData: Project[] = [
         ]
     },
 
+
+  {
+        id: 10,
+        name: "React Movie Website using tmdb apis",
+        techStack: ["/js.png" ,"/react.png", "/mu.png", "/node.jpg"],
+        description: "React and Material Ui for create a visually appealing and responsive website layout and Nodejs For backend Development",
+        category: "React",
+        github: "https://github.com/Ahsan2001/restaurant-web-application",
+        detail: [
+            {
+                title: "Project: Blog App - React, Node, MongoDB  Website",
+                description: `User Authentication
+                Users can create an account with their name, username, email address and password.
+                Users can log in with their registered username and password.
+                User passwords are securely hashed and stored in the database using bcrypt.
+                Authentication is implemented using JWT (JSON Web Tokens)
+                Users can view a list of Menu and detail page
+                Users can comment on any Menu
+                admin can post a Menu with  name, title, content, and food image
+                Image is store in cloudinary platform
+                Only Admin Users can Edit and Delete Functionality in blog
+                Functionalities are protected by role-based access control (RBAC), ensuring that only authenticated`,
+                links: "https://github.com/Ahsan2001/restaurant-web-application",
+            },
+        ]
+    },
+
+    
     {
         id: 6,
         name: "Full Stack Blog App Website",

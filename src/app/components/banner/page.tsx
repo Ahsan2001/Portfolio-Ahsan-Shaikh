@@ -15,7 +15,7 @@ const HomeBanner = () => {
                 <Grid container alignItems="center">
                     <Grid item lg={6} md={6} xs={12} >
                         <Box className={style.bannerContent}>
-                            <h1>Modern Full Stack Cloud Developer and Architect</h1>
+                            <h1>Modern Full Stack Javascript Developer</h1>
                             <p>I am a Full stack developer with expertise in Javascript development. 
                             I have experience in building scalable, secure and reliable web applications using various frameworks 
                             and technologies. I enjoy solving complex problems and learning new skills. 
@@ -29,10 +29,10 @@ const HomeBanner = () => {
                                 <a target="_blank" href="https://github.com/Ahsan2001" rel="noopener noreferrer">
                                     <GitHubIcon />
                                 </a>
-                                <a target="_blank" href="https://twitter.com/ahsan_wins" rel="noopener noreferrer">
+                                <a target="_blank" href="https://twitter.com/" rel="noopener noreferrer">
                                     <TwitterIcon />
                                 </a>
-                                <a target="_blank" href="https://www.instagram.com/ahsan_wins" rel="noopener noreferrer">
+                                <a target="_blank" href="https://www.instagram.com/" rel="noopener noreferrer">
                                     <InstagramIcon />
                                 </a>
                             </Box>

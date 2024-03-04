@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Grid,Box } from '@mui/material';
 import style from "@/app/about/style.module.css";
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -12,9 +12,10 @@ import SaveAltIcon from '@mui/icons-material/SaveAlt';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Link from 'next/link';
 
-
-
 function About() {
+  useEffect(()=>{
+    document.title = "About me | Ahsan Shaikh"
+  },[])
   return (
     <Container maxWidth="lg">
             <section className={style.aboutMe}>
@@ -32,10 +33,10 @@ function About() {
                               <a target="_blank" href="https://github.com/Ahsan2001" rel="noopener noreferrer">
                                   <GitHubIcon /> Follow on github
                               </a>
-                              <a target="_blank" href="https://twitter.com/ahsan_wins" rel="noopener noreferrer">
+                              <a target="_blank" href="https://twitter.com" rel="noopener noreferrer">
                                   <TwitterIcon /> Follow on twitter
                               </a> 
-                              <a target="_blank" href="https://www.instagram.com/ahsan_wins" rel="noopener noreferrer">
+                              <a target="_blank" href="https://www.instagram.com" rel="noopener noreferrer">
                                   <InstagramIcon /> Follow on instagram
                               </a>
 

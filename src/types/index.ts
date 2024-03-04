@@ -19,3 +19,9 @@ export interface Project {
     }[];
 }
 
+
+export interface FormData {
+    userName: string;
+    email: string;
+    msg: string;
+}

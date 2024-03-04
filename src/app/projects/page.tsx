@@ -1,4 +1,6 @@
-import React from 'react';
+"use client"
+
+import React, { useEffect } from 'react';
 import { Container, Grid, Box } from '@mui/material';
 import style from "@/app/projects/style.module.css"
 import Link from 'next/link';
@@ -7,6 +9,9 @@ import LinkIcon from '@mui/icons-material/Link';
 import {projectData} from "@/static/projects"
 
 const Projects = () => {
+    useEffect(()=>{
+        document.title = "Projects"
+    },[])
   return (
     <Container maxWidth="lg">
         <section className={style.projects}>

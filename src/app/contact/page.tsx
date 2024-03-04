@@ -1,16 +1,33 @@
 "use client"
 
-import React from 'react';
-import {Container, Grid} from '@mui/material';
+import React, { useEffect, useState } from 'react';
+import { Container, Grid } from '@mui/material';
 import style from "@/app/contact/style.module.css";
 import TextField from '@mui/material/TextField';
 
 function Contact() {
+    useEffect(() => {
+        document.title = "Contact me"
+    }, [])
+
+    const [user, setUserName] = useState('');
+    const [email, setEmail] = useState('');
+    const [msg, setMsg] = useState('');
+
+    
+    const handleSubmit = (e: any) => {
+        e.preventDefault(); 
+        alert("Name: " + user + "\nEmail: " + email + "\nMessage: " + msg);
+        setUserName("");
+        setEmail("");
+        setMsg("");
+      };
+
     return (
 
         <Container maxWidth="lg">
             <section className={style.contact}>
-                <Grid container columnSpacing={{xs: 1, sm: 2, md: 2, lg: 3}}>
+                <Grid container columnSpacing={{ xs: 1, sm: 2, md: 2, lg: 3 }}>
                     <Grid item lg={8} md={8} xs={12}>
                         <div className={`${style.rightSideContent}  bg-theme`}>
                             <h3 className="heading">Let's Get in Touch</h3>
@@ -19,7 +36,7 @@ function Contact() {
                                 If you have a specific question or comment, please feel free to email me directly
                                 at &nbsp;
                                 <a target="_blank" href="https://www.instagram.com/ahsan_wins"
-                                   rel="noopener noreferrer">
+                                    rel="noopener noreferrer">
                                     ahsan.sabir@yahoo.com
                                 </a>
                                 . I make an effort to respond to all messages within 24 hours,
@@ -29,27 +46,28 @@ function Contact() {
                                 Finally, if you prefer to connect on social media,
                                 you can find me on &nbsp;
                                 <a target="_blank" href="https://www.instagram.com/ahsan_wins"
-                                   rel="noopener noreferrer">
-                                    https://instagram.com/ahsan_wins/
+                                    rel="noopener noreferrer">
+                                    Instagram
                                 </a>
                                 .
-                                I post regular updates and engage with my followers there, so don't hesitate to reach
-                                out. Thanks again for your interest, and I look forward to hearing from you! </p>
+                                {/* I post regular updates and engage with my followers there, so don't hesitate to reach
+                                out.  */}
+                                Thanks again for your interest, and I look forward to hearing from you! </p>
                         </div>
                     </Grid>
 
                     <Grid item lg={4} md={4} xs={12}>
-                        <form className={`${style.contactForm} bg-theme`}>
+                        <form className={`${style.contactForm} bg-theme`} onSubmit={handleSubmit}>
                             <div className={style.inputBox}>
-                                 <TextField fullWidth id="standard-basic"  label="Name" variant="standard"/>
+                                <TextField fullWidth id="standard-basic" label="Name" variant="standard" value={user} onChange={(e) => setUserName(e.target.value)}/>
                             </div>
                             <div className={style.inputBox}>
-                                 <TextField fullWidth id="standard-basic"  label="Email" variant="standard"/>
+                                <TextField fullWidth id="standard-basic" label="Email" variant="standard" value={email} onChange={(e) => setEmail(e.target.value)}/>
                             </div>
                             <div className={style.inputBox}>
-                                <TextField fullWidth id="standard-basic"  label="Message" variant="standard"/>
+                                <TextField fullWidth id="standard-basic" label="Message" variant="standard" value={msg} onChange={(e) => setMsg(e.target.value)}/>
                             </div>
-                            <button className="inner-theme">Send</button>
+                            <button type="submit" className="inner-theme">Send</button>
                         </form>
                     </Grid>
                 </Grid>
